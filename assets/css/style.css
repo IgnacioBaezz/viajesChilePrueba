@@ -1,10 +1,37 @@
+/*Main settings for page(fonts, color variables)*/
+*{
+    font-family: "Poppins", sans-serif;
+}
+:root{
+    --mainColor: #36C2CE;
+}
 .img-logo{
     width: 40px;
 }
-
+/*Adjust img to card perfectly*/
 .img-cards{
     height: 300px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+/*Zoom style card and navbar links*/
+.card-s2{
+    transition: all 0.3s;
+}
+.card-s2:hover{
+    transform: scale(1.15);
+}
+.nav-link{
+    transition: all 0.3s;
+}
+.nav-link:hover{
+    transform: scale(1.15);
+    text-decoration: underline;
+    color: var(--mainColor);
+    padding-left: 30px;
+}
+/*Change of color to the home page*/
+.bg-primary, .btn-primary{
+    background-color: var(--mainColor) !important;
 }
